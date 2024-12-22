@@ -37,6 +37,7 @@
 - Add all .png images inside [IMAGES] folder into your inventory/images folder
 - Add all .ogg files inside [INTERACT-SOUND] into your interact-sound/client/html/sounds folder
 - Ensure all dependencies are started BEFORE this resource
+- You will need to set your own locations for the presents to spawn, they are currently at the beach for testing purposes
 
 
 ## QB-CORE ITEMS
