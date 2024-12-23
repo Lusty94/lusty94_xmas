@@ -26,11 +26,11 @@ end
 
 --spawn presents
 function spawnPresents()
-    local icon = Config.InteractionLocations.Presents.Icon
-    local label = Config.InteractionLocations.Presents.Label
-    local prop = Config.InteractionLocations.Presents.Prop
-    local dist = Config.InteractionLocations.Presents.Distance
 	for k,v in pairs(Config.InteractionLocations.Presents.Locations) do
+        local icon = Config.InteractionLocations.Presents.Icon
+        local label = Config.InteractionLocations.Presents.Label
+        local prop = Config.InteractionLocations.Presents.Prop
+        local dist = Config.InteractionLocations.Presents.Distance
 		lib.requestModel(prop, 20000)
 		presents = CreateObject(prop, v.Coords.x, v.Coords.y, v.Coords.z - 1, true, false, false)
 		SetEntityHeading(presents, v.Coords.W)
