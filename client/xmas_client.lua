@@ -87,11 +87,11 @@ end
 
 --spawn snowmen
 function spawnSnowmen()
-    local icon = Config.InteractionLocations.Snowmen.Icon
-    local label = Config.InteractionLocations.Snowmen.Label
-    local prop = Config.InteractionLocations.Snowmen.Prop
-    local dist = Config.InteractionLocations.Snowmen.Distance
 	for k, v in pairs(Config.InteractionLocations.Snowmen.Locations) do
+        local icon = Config.InteractionLocations.Snowmen.Icon
+        local label = Config.InteractionLocations.Snowmen.Label
+        local prop = Config.InteractionLocations.Snowmen.Prop
+        local dist = Config.InteractionLocations.Snowmen.Distance
 		lib.requestModel(prop, 20000)
 		snowmen = CreateObject(prop, v.Coords.x, v.Coords.y, v.Coords.z - 1, true, false, false)
 		SetEntityHeading(snowmen, v.Coords.w - 180)
